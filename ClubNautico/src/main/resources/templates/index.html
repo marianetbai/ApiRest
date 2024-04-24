@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Náutico</title>
+    <!-- Enlazar la hoja de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="blur-background">
+    <header>
+        <section class="wrapper">
+            <nav>
+                <ul>
+                    <li><a id="linkSocios" href="#">Socios</a></li>
+                    <li><a href="#">Barcos</a></li>
+                    <li><a href="#">Patrón</a></li>
+                    <li><a href="#">Salidas</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <div class="contenido">
+        <!-- Aquí puedes agregar el contenido de tu página -->
+        <h1>Club Náutico</h1>
+    </div>
+
+    <script>
+        // Redirige a la página de gestión de socios al hacer clic en el enlace "Socios"
+        document.getElementById('linkSocios').addEventListener('click', function(event) {
+            event.preventDefault(); // Evita que el enlace ejecute su acción predeterminada (navegar a otra página)
+            window.location.href = 'socios.html'; // Redirige al usuario a la página de gestión de socios
+        });
+    </script>
+</body>
+</html>
